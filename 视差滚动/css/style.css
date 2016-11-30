@@ -1,0 +1,283 @@
+body,ul,li{ margin:0; padding: 0;}
+	li{ list-style: none; }
+	body{ background: #00bff3;transition: background 3s;max-width: 750px;min-width: 320px;}
+
+
+	/*.block{width: 100%;height:100%;background:rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;z-index: 900;text-align: center;}
+	#block{margin-top:5.00px;width:1.00px;height:0.50px;border-radius: 0.10px;border-width: 0;}
+	
+	.yellow-person{position: fixed;bottom:10.00px; left: 50%;margin-left:-0.54px;z-index: 400;}
+	.sweat{position:absolute;transform:rotate(37deg);left:0.20px;display: none;}
+	.sweat-right{position:absolute;transform:rotate(-37deg);left:1.13px;top:-0.20px;}
+	.sweat span{width:0.10px;height:0.10px;background: dodgerblue;position: absolute;top:0.20px;left:-0.20px;border-radius: 50%;}
+	.sweat span i{position: absolute;border-width: 0.05px;width:0;height:0;border-style: solid;border-color:transparent transparent dodgerblue transparent;top:-0.07px;}
+	.sweat .sweat2{top:0.35px;left:-0.25px;}
+	.sweat .sweat3{top:0.35px;left:-0.15px;}
+	.sweat .sweat4{top:0.50px;left:-0.30px;}
+	.sweat .sweat5{top:0.50px;left:-0.10px;}
+	.yellow-person-body{position: relative;width:1.08px;height:1.08px;background:#000405;border-radius:0.08px;overflow: hidden;}
+	.yellow-person .shadow{width:1.08px;height:1.08px;background:black;border-radius:0.08px;position: absolute;top:1.38px;display: block;transform-origin: 0.24px -0.18px;transform: skewX(-70deg);display: none;}
+	.yellow-person .shadow-feet span{width:0.21px;height:0.21px;background: black;position: absolute;top:-0.17px;display: block;}
+	.shadow-feet .left{left:0.24px;}
+	.shadow-feet .right{right:0.24px;}
+	.yellow-person-body .head{width:2.00px;height:2.00px;background: #f7df34;border-radius: 50%;display: block;position:absolute;top:-1.18px;left:50%;margin-left:-1.00px;}
+	.left-hand .hand1{background: #f7df34;width:0.24px;height:0.24px;border-radius: 50%;display: block;position:absolute;top:0.93px;left:-0.07px;}
+	.left-hand .hand2{background: #f7df34;width:0.36px;height:0.36px;border-radius: 50%;display: block;position:absolute;top:0.85px;left:-0.19px;}
+	.right-hand{width:100%;display: block;}
+	.right-hand .hand1{background: #f7df34;width:0.24px;height:0.24px;border-radius: 50%;display: block;position:absolute;top:0.93px;right:-0.07px;}
+	.right-hand .hand2{background: #f7df34;width:0.36px;height:0.36px;border-radius: 50%;display: block;position:absolute;top:0.85px;right:-0.19px;}
+	.yellow-person-body .bowknot{height:0;width:0;border-style: solid;border-width:0.10px 0.22px;border-color: transparent #95414f transparent #95414f;position:absolute;top: 0.72px;left:50%;margin-left: -0.22px;}
+	.eye .outcurcle{width:0.51px;height:0.51px;background: #fffeff;border-radius:50%;position: absolute;}
+	.eye .middlecurcle{width:0.44px;height:0.44px;background: #d2d9c7;border-radius:50%;position: absolute;top:50%;left:50%;margin-top:-0.22px;margin-left:-0.22px;}
+	.eye .incurcle{width:0.36px;height:0.36px;background: #f7df34;border-radius:50%;border:0.01px solid #bca930;position: absolute;top:50%;left:50%;margin-top:-0.19px;margin-left:-0.19px;}
+	.eye .incurcle>i{width:0.30px;height:0.30px;background: white;border-radius: 50%;}
+	.eye .left{position:absolute;top:50%;left:0;margin-top:-0.15px;}
+	.eye .middle{position:absolute;top:50%;left:50%;margin-top:-0.15px;margin-left:-0.15px;}
+	.eye .right{position:absolute;top:50%;right:0;margin-top:-0.15px;}
+	.yellow-person-body .eye .main-out{width: 0.17px;height:0.17px;background: #aa4f20;border-radius: 50%;position: absolute;top: 0.11px;left:0.08px;}
+	.eye .main-in{width: 0.12px;height:0.12px;background: #040203;border-radius: 50%;position: absolute;top: 50%;left: 50%;margin-top:-0.06px;margin-left:-0.06px;}
+	.eye .main-light{width: 0.04px;height:0.04px;background:white;border-radius: 50%;position: absolute;top:0.04px;left:0.03px;}
+	.yellow-person-body .eye {position: absolute;top:0.04px;left:0.04px;}
+	.yellow-person-body .eye-right {position: absolute;top:0.04px;right:0.55px;left:auto;}
+	.yellow-person-body .tape{width:1.08px;height:0.17px;background: #2e2c2f;position: absolute;top:0.22px;}
+	.yellow-person-feet span{width:0.21px;height:0.21px;background: #95414f;border-top-left-radius: 100%;border-top-right-radius: 100%;position:absolute;}
+	.yellow-person-feet .left{left:0.24px;top:1.00px;}
+	.yellow-person-feet .right{top:1.00px;right:0.24px;}
+
+	.floor{ position: fixed; width: 100%; bottom: 0; left: 0; height: 1.28px;  background: #a67c53;z-index: 200;}
+	.floor-grass{ height: 39%; background: #8dc63f; }
+	.floor-wl{height: 61%; }
+	.floor-wl li{ float: left; position: relative; width: 1.00px; height: 100%;  }
+	.floor-wl span{ float: left; width: 50%; height: 50%; background: #8b6139;}
+	.floor-wl span:nth-child(1){transform:skew(0,-30deg) translate(0,0.20px);}
+	.floor-wl span:nth-child(2){transform:skew(0,30deg) translate(0,0.20px);}
+	.floor-wl .arrow{ position: absolute; left: 0; top: -0.10px;}
+	.floor-wl .arrow i{ float: left; width: 0; height: 0; border-width: 0.05px; border-color:transparent transparent #a67c52 transparent; border-style: solid; }
+	.hill{position:fixed;bottom:1.28px;left: 0;z-index: 60;}
+	.mountain{width:0;height:0;border-width:2.39px;border-color:#8c6238 transparent transparent #c69c6c;border-style: solid;transform: rotate(45deg);position: absolute;bottom:-2.39px;left:2.00px;}
+	.cloud{position:fixed;top:0;left: 0;z-index: 50;}
+	.cloud1{position:absolute;}
+	.cloud1 .cloud-main{width:2.11px;height:0.67px;background: white;border-radius:0.33px;display: block;position: relative;}
+	.cloud1 .cercle1{background: white;width:1.13px;height:1.13px;border-radius: 50%;display: block;position: absolute;left:0.31px;top:-0.55px}
+	.cloud1 .cercle2{background: white;width:80px;height:80px;border-radius: 50%;display: block;position: absolute;left:1.05px;top:-0.49px;}
+	.cloud1 .cercle3{background: white;width:0.56px;height:0.56px;border-radius: 50%;display: block;position: absolute;left:0.24px;top:-0.43px;}
+	.cloud2{position:absolute;}
+	.cloud2 .cloud-main{width:2.11px;height:0.67px;background: white;border-radius:0.33px;display: block;position: relative;}
+	.cloud2 .cercle1{background: white;width:1.13px;height:1.13px;border-radius: 50%;display: block;position: absolute;left:0.31px;top:-0.55px}
+	.cloud2 .cercle2{background: white;width:0.56px;height:0.56px;border-radius: 50%;display: block;position: absolute;left:1.27px;top:-0.35px;}
+	.cloud3{position:absolute;z-index: 50;}
+	.cloud3 .cloud-main{width:2.11px;height:0.67px;background: dimgrey;border-radius:0.33px;display: block;position: relative;z-index: 30;}
+	.cloud3 .cercle1{background: dimgrey;width:1.13px;height:1.13px;border-radius: 50%;display: block;position: absolute;left:0.31px;top:-0.55px}
+	.cloud3 .cercle2{background: dimgrey;width:0.80px;height:0.80px;border-radius: 50%;display: block;position: absolute;left:1.05px;top:-0.49px;}
+	.cloud3 .cercle3{background: dimgrey;width:0.56px;height:0.56px;border-radius: 50%;display: block;position: absolute;left:0.24px;top:-0.43px;}
+	.cloud-main em{width:0.02px;height:0.20px;background: dodgerblue;position: absolute;top:0.70px;left:0.20px}
+	.cloud-main .rain-main{position: absolute;top:0;}
+	.cloud-main .rain{position: absolute;z-index: 30;}
+	.cloud-main .rain2{width:0.02px;height:0.20px;background: dodgerblue;position: absolute;top:0.90px;left:0.60px}
+	.cloud-main .rain3{width:0.02px;height:0.20px;background: dodgerblue;position: absolute;top:0.70px;left:1.00px}
+	.cloud-main .rain4{width:0.02px;height:0.20px;background: dodgerblue;position: absolute;top:0.90px;left:1.40px}
+	.cloud-main .rain5{width:0.02px;height:0.20px;background: dodgerblue;position: absolute;top:0.70px;left:1.80px}
+	.tree{position: fixed;bottom:1.28px;left: 0;z-index: 70;}
+	.tree1{width:0.20px;height:0.30px;background: #a67c52;display: block;position: absolute;bottom:0;}
+	.tree1 .leaf{height:0.50px;width:0.70px;background: #8dc63f;border-top-left-radius: 40%;border-top-right-radius: 40%;position:absolute;left:50%;top:-0.30px;margin-left:-0.35px;}
+	.tree1 .leaf i{width:0.07px;height:0.07px;display: inline-block;border-radius: 50%;background: #8dc63f;margin-top: 0.47px;}
+	.tree2{width:0.20px;height:0.70px;background: #a67c52;display: block;position: absolute;left:1.00px;bottom:0;}
+	.tree2 .leaf{height:0.90px;width:0.70px;background: #8dc63f;border-top-left-radius: 0.35px;border-top-right-radius: 0.35px;position:absolute;left:50%;top:-0.35px;margin-left:-0.35px;}
+	.tree2 .leaf i{width:0.07px;height:0.07px;display: inline-block;border-radius: 50%;background: #8dc63f;margin-top: 0.87px;}
+	.tree3{width:0.20px;height:1.00px;background: #a67c52;display: block;position: absolute;left:1.00px;bottom:0;}
+	.tree3 .leaf{height:0.90px;width:0.70px;background: #3ab54a;border-top-left-radius: 50%;border-top-right-radius: 50%;position:absolute;left:50%;top:-0.50px;margin-left:-0.35px;}
+	.tree3 .leaf i{width:0.07px;height:0.07px;display: inline-block;border-radius: 50%;background: #3ab54a;margin-top: 0.87px;}
+	.sun{position: fixed;bottom:0.90px;width:100%;}
+	.sun .sun-main{width:1.00px;height:1.00px;background: yellow;border-radius: 50%;display: block;position:absolute;right:0px;}
+	.sun-main i{height:0;width:0;border-width:0.20px;border-style: solid;border-color: transparent transparent orange transparent;position:absolute;top:-0.50px;left:50%;margin-left:-0.20px;transform-origin:0.20px 1.00px;}
+	.sun-main .sun2{transform: rotate(60deg);}
+	.sun-main .sun3{transform: rotate(120deg);}
+	.sun-main .sun4{transform: rotate(180deg);}
+	.sun-main .sun5{transform: rotate(240deg);}
+	.sun-main .sun6{transform: rotate(300deg);}
+	.moon{position: fixed;bottom:0.90px;width:100%;}
+	.moon .moon-main{width:1.00px;height:1.00px;background:lightgoldenrodyellow;border-radius: 50%;display: block;position:absolute;right:0px;}
+	.moon-main i{width:1.00px;height:1.00px;border-radius: 50%;display: block;position:absolute;background:#00bff3;top:-0.16px;left:-0.19px;transition: background 3s;}
+	
+	.flower{position:fixed;bottom:1.38px;width: 100%;z-index: 100;}
+	.flower .stem{width:0.10px;height:10.00px;background: #07652d;position: absolute;top:100px;display: block;transition: top 1s;}
+	.flower .flower-main{width:0.30px;height:0.30px;border-radius: 50%;background: yellow;position:absolute;top:0.15px;left:50%;margin-left:-0.15px;display: block;}
+	.flower-main i{width:0.36px;height:0.36px;border-radius: 50%;background: indianred;position: absolute;top:-0.25px;left:50%;margin-left:-0.18px;display: block;transform-origin:0.18px 0.40px;}
+	.flower-main .petal2{transform: rotate(72deg);}
+	.flower-main .petal3{transform: rotate(144deg);}
+	.flower-main .petal4{transform: rotate(216deg);}
+	.flower-main .petal5{transform: rotate(288deg);}
+	.flower-main .flower-middle{width:0.30px;height:0.30px;border-radius: 50%;background: yellow;position:absolute;top:0;left:50%;margin-left:-0.15px;display: block;}
+	.flower-main .word{color: white;font-size:0.18px;font-family: "微软雅黑";position:absolute;top:-0.70px;}
+
+	.butterfly{position:fixed;bottom:1.38px;z-index: 100;}
+	.fly-main{position:absolute;left:184.00px;bottom:5.00px;transform: rotate(-30deg);}
+	.butterfly .hr{transform: rotate(0deg);left:183.70px;width:8.00px;bottom:1.24px;}
+	.fly-main .word{transform: rotate(30deg);color: white;font-size:0.18px;font-family: "微软雅黑";position: absolute;top: 0.11px;width:0.40px;}
+	.hr hr{margin-top: 0.994px;}
+	.fly-main .fly2{width:0.20px;height:0.08px;background: #AA4F20;display: block;}
+	.fly-main .fly1{width:0.08px;height:0.08px;border-radius: 50%;background: #AA4F20;display: block;position: absolute;left:-0.04px;}
+	.fly-main .fly3{width:0.08px;height:0.08px;border-radius: 50%;background: #AA4F20;display: block;position: absolute;top:0;left:0.16px;}
+	.fly-main .wing1{width:0.25px;height:0.25px;border-radius: 50%;background:#ea4b4b;display: block;position: absolute;top:-0.22px;left:0.01px;}
+	.fly-main .wing2{width:0.15px;height:0.15px;border-radius: 50%;background:#ea4b4b;display: block;position: absolute;top:-0.11px;left:-0.10px;}
+	.fly-main .tentcle1{width:0.13px;height:0.03px;background: darkslategrey;position: absolute;top: -0.02px;left:0.20px;transform: rotate(-30deg);}
+	.fly-main .tentcle2{width:0.13px;height:0.03px;background: darkslategrey;position: absolute;top: -0.04px;left:0.18px;transform: rotate(-60deg);}
+ 	.butterfly .fly-main2{bottom:4.00px;}
+ 	.butterfly .fly-main3{bottom:3.00px;}
+ 	.butterfly .fly-main4{bottom:2.00px;}
+ 	.butterfly .fly-main5{bottom:1.00px;}
+
+	.rainbow{position:fixed;bottom:6.38px;z-index: 50;display: none;}
+	.rainbow .rainbow1{width:9.40px;height:9.40px;background: red;border-radius: 50%;position: absolute;left:185.00px;display: block;padding:0.30px;}
+	.rainbow .rainbow2{width:8.80px;height:8.80px;background: orange;border-radius: 50%;display: block;padding:0.30px;}
+	.rainbow .rainbow3{width:8.20px;height:8.20px;background: yellow;border-radius: 50%;display: block;padding:0.30px;}
+	.rainbow .rainbow4{width:7.60px;height:7.60px;background: green;border-radius: 50%;display: block;padding:0.30px;}
+	.rainbow .rainbow5{width:7.00px;height:7.00px;background: darkturquoise;border-radius: 50%;display: block;padding:0.30px;}
+	.rainbow .rainbow6{width:6.40px;height:6.40px;background: deepskyblue;border-radius: 50%;display: block;padding:0.30px;}
+	.rainbow .rainbow7{width:5.80px;height:5.80px;background: mediumpurple;border-radius: 50%;display: block;padding:0.30px;}
+	.rainbow .rainbow8{width:5.80px;height:5.80px;background: #00bff3;border-radius: 50%;display: block;transition: background 3s;}*/
+
+
+	.block{width: 100%;height:100%;background:rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;z-index: 900;text-align: center;}
+	#block{margin-top:30%;width:100px;height:50px;border-radius: 10px;border-width: 0;}
+	
+	.yellow-person{position: fixed;bottom:1000px; left: 50%;margin-left:-54px;z-index: 400;}
+	.sweat{position:absolute;transform:rotate(37deg);left:20px;display: none;}
+	.sweat-right{position:absolute;transform:rotate(-37deg);left:113px;top:-20px;}
+	.sweat span{width:10px;height:10px;background: dodgerblue;position: absolute;top:20px;left:-20px;border-radius: 50%;}
+	.sweat span i{position: absolute;border-width: 5px;width:0;height:0;border-style: solid;border-color:transparent transparent dodgerblue transparent;top:-7px;}
+	.sweat .sweat2{top:35px;left:-25px;}
+	.sweat .sweat3{top:35px;left:-15px;}
+	.sweat .sweat4{top:50px;left:-30px;}
+	.sweat .sweat5{top:50px;left:-10px;}
+	.yellow-person-body{position: relative;width:108px;height:108px;background:#000405;border-radius:8px;overflow: hidden;}
+	.yellow-person .shadow{width:108px;height:108px;background:black;border-radius:8px;position: absolute;top:138px;display: block;transform-origin: 24px -18px;transform: skewX(-70deg);display: none;}
+	.yellow-person .shadow-feet span{width:21px;height:21px;background: black;position: absolute;top:-17px;display: block;}
+	.shadow-feet .left{left:24px;}
+	.shadow-feet .right{right:24px;}
+	.yellow-person-body .head{width:200px;height:200px;background: #f7df34;border-radius: 50%;display: block;position:absolute;top:-118px;left:50%;margin-left:-100px;}
+	.left-hand .hand1{background: #f7df34;width:24px;height:24px;border-radius: 50%;display: block;position:absolute;top:93px;left:-7px;}
+	.left-hand .hand2{background: #f7df34;width:36px;height:36px;border-radius: 50%;display: block;position:absolute;top:85px;left:-19px;}
+	.right-hand{width:100%;display: block;}
+	.right-hand .hand1{background: #f7df34;width:24px;height:24px;border-radius: 50%;display: block;position:absolute;top:93px;right:-7px;}
+	.right-hand .hand2{background: #f7df34;width:36px;height:36px;border-radius: 50%;display: block;position:absolute;top:85px;right:-19px;}
+	.yellow-person-body .bowknot{height:0;width:0;border-style: solid;border-width:10px 22px;border-color: transparent #95414f transparent #95414f;position:absolute;top: 72px;left:50%;margin-left: -22px;}
+	.eye .outcurcle{width:51px;height:51px;background: #fffeff;border-radius:50%;position: absolute;}
+	.eye .middlecurcle{width:44px;height:44px;background: #d2d9c7;border-radius:50%;position: absolute;top:50%;left:50%;margin-top:-22px;margin-left:-22px;}
+	.eye .incurcle{width:36px;height:36px;background: #f7df34;border-radius:50%;border:1px solid #bca930;position: absolute;top:50%;left:50%;margin-top:-19px;margin-left:-19px;}
+	.eye .incurcle>i{width:30px;height:30px;background: white;border-radius: 50%;}
+	.eye .left{position:absolute;top:50%;left:0;margin-top:-15px;}
+	.eye .middle{position:absolute;top:50%;left:50%;margin-top:-15px;margin-left:-15px;}
+	.eye .right{position:absolute;top:50%;right:0;margin-top:-15px;}
+	.yellow-person-body .eye .main-out{width: 17px;height:17px;background: #aa4f20;border-radius: 50%;position: absolute;top: 11px;left:8px;}
+	.eye .main-in{width: 12px;height:12px;background: #040203;border-radius: 50%;position: absolute;top: 50%;left: 50%;margin-top:-6px;margin-left:-6px;}
+	.eye .main-light{width: 4px;height:4px;background:white;border-radius: 50%;position: absolute;top:4px;left:3px;}
+	.yellow-person-body .eye {position: absolute;top:4px;left:4px;}
+	.yellow-person-body .eye-right {position: absolute;top:4px;right:55px;left:auto;}
+	.yellow-person-body .tape{width:108px;height:17px;background: #2e2c2f;position: absolute;top:22px;}
+	.yellow-person-feet span{width:21px;height:21px;background: #95414f;border-top-left-radius: 100%;border-top-right-radius: 100%;position:absolute;}
+	.yellow-person-feet .left{left:24px;top:100px;}
+	.yellow-person-feet .right{top:100px;right:24px;}
+
+	.floor{ position: fixed; width: 100%; bottom: 0; left: 0; height: 128px;  background: #a67c53;z-index: 200;}
+	.floor-grass{ height: 39%; background: #8dc63f; }
+	.floor-wl{height: 61%; }
+	.floor-wl li{ float: left; position: relative; width: 100px; height: 100%;  }
+	.floor-wl span{ float: left; width: 50%; height: 50%; background: #8b6139;}
+	.floor-wl span:nth-child(1){transform:skew(0,-30deg) translate(0,20px);}
+	.floor-wl span:nth-child(2){transform:skew(0,30deg) translate(0,20px);}
+	.floor-wl .arrow{ position: absolute; left: 0; top: -10px;}
+	.floor-wl .arrow i{ float: left; width: 0; height: 0; border-width: 5px; border-color:transparent transparent #a67c52 transparent; border-style: solid; }
+	.hill{position:fixed;bottom:128px;left: 0;z-index: 60;}
+	.mountain{width:0;height:0;border-width:239px;border-color:#8c6238 transparent transparent #c69c6c;border-style: solid;transform: rotate(45deg);position: absolute;bottom:-239px;left:200px;}
+	.cloud{position:fixed;top:0;left: 0;z-index: 50;}
+	.cloud1{position:absolute;}
+	.cloud1 .cloud-main{width:211px;height:67px;background: white;border-radius:33px;display: block;position: relative;}
+	.cloud1 .cercle1{background: white;width:113px;height:113px;border-radius: 50%;display: block;position: absolute;left:31px;top:-55px}
+	.cloud1 .cercle2{background: white;width:80px;height:80px;border-radius: 50%;display: block;position: absolute;left:105px;top:-49px;}
+	.cloud1 .cercle3{background: white;width:56px;height:56px;border-radius: 50%;display: block;position: absolute;left:24px;top:-43px;}
+	.cloud2{position:absolute;}
+	.cloud2 .cloud-main{width:211px;height:67px;background: white;border-radius:33px;display: block;position: relative;}
+	.cloud2 .cercle1{background: white;width:113px;height:113px;border-radius: 50%;display: block;position: absolute;left:31px;top:-55px}
+	.cloud2 .cercle2{background: white;width:56px;height:56px;border-radius: 50%;display: block;position: absolute;left:127px;top:-35px;}
+	.cloud3{position:absolute;z-index: 50;}
+	.cloud3 .cloud-main{width:211px;height:67px;background: dimgrey;border-radius:33px;display: block;position: relative;z-index: 30;}
+	.cloud3 .cercle1{background: dimgrey;width:113px;height:113px;border-radius: 50%;display: block;position: absolute;left:31px;top:-55px}
+	.cloud3 .cercle2{background: dimgrey;width:80px;height:80px;border-radius: 50%;display: block;position: absolute;left:105px;top:-49px;}
+	.cloud3 .cercle3{background: dimgrey;width:56px;height:56px;border-radius: 50%;display: block;position: absolute;left:24px;top:-43px;}
+	.cloud-main em{width:2px;height:20px;background: dodgerblue;position: absolute;top:70px;left:20px}
+	.cloud-main .rain-main{position: absolute;top:0;}
+	.cloud-main .rain{position: absolute;z-index: 30;}
+	.cloud-main .rain2{width:2px;height:20px;background: dodgerblue;position: absolute;top:90px;left:60px}
+	.cloud-main .rain3{width:2px;height:20px;background: dodgerblue;position: absolute;top:70px;left:100px}
+	.cloud-main .rain4{width:2px;height:20px;background: dodgerblue;position: absolute;top:90px;left:140px}
+	.cloud-main .rain5{width:2px;height:20px;background: dodgerblue;position: absolute;top:70px;left:180px}
+	.tree{position: fixed;bottom:128px;left: 0;z-index: 70;}
+	.tree1{width:20px;height:30px;background: #a67c52;display: block;position: absolute;bottom:0;}
+	.tree1 .leaf{height:50px;width:70px;background: #8dc63f;border-top-left-radius: 40%;border-top-right-radius: 40%;position:absolute;left:50%;top:-30px;margin-left:-35px;}
+	.tree1 .leaf i{width:7px;height:7px;display: inline-block;border-radius: 50%;background: #8dc63f;margin-top: 47px;}
+	.tree2{width:20px;height:70px;background: #a67c52;display: block;position: absolute;left:100px;bottom:0;}
+	.tree2 .leaf{height:90px;width:70px;background: #8dc63f;border-top-left-radius: 35px;border-top-right-radius: 35px;position:absolute;left:50%;top:-35px;margin-left:-35px;}
+	.tree2 .leaf i{width:7px;height:7px;display: inline-block;border-radius: 50%;background: #8dc63f;margin-top: 87px;}
+	.tree3{width:20px;height:100px;background: #a67c52;display: block;position: absolute;left:100px;bottom:0;}
+	.tree3 .leaf{height:90px;width:70px;background: #3ab54a;border-top-left-radius: 50%;border-top-right-radius: 50%;position:absolute;left:50%;top:-50px;margin-left:-35px;}
+	.tree3 .leaf i{width:7px;height:7px;display: inline-block;border-radius: 50%;background: #3ab54a;margin-top: 87px;}
+	.sun{position: fixed;bottom:90px;width:100%;}
+	.sun .sun-main{width:100px;height:100px;background: yellow;border-radius: 50%;display: block;position:absolute;right:0px;}
+	.sun-main i{height:0;width:0;border-width:20px;border-style: solid;border-color: transparent transparent orange transparent;position:absolute;top:-50px;left:50%;margin-left:-20px;transform-origin:20px 100px;}
+	.sun-main .sun2{transform: rotate(60deg);}
+	.sun-main .sun3{transform: rotate(120deg);}
+	.sun-main .sun4{transform: rotate(180deg);}
+	.sun-main .sun5{transform: rotate(240deg);}
+	.sun-main .sun6{transform: rotate(300deg);}
+	.moon{position: fixed;bottom:90px;width:100%;}
+	.moon .moon-main{width:100px;height:100px;background:lightgoldenrodyellow;border-radius: 50%;display: block;position:absolute;right:0px;}
+	.moon-main i{width:100px;height:100px;border-radius: 50%;display: block;position:absolute;background:#00bff3;top:-16px;left:-19px;transition: background 3s;}
+	
+	.flower{position:fixed;bottom:138px;width: 100%;z-index: 100;}
+	.flower .stem{width:10px;height:1000px;background: #07652d;position: absolute;top:100px;display: block;transition: top 1s;}
+	.flower .flower-main{width:30px;height:30px;border-radius: 50%;background: yellow;position:absolute;top:15px;left:50%;margin-left:-15px;display: block;}
+	.flower-main i{width:36px;height:36px;border-radius: 50%;background: indianred;position: absolute;top:-25px;left:50%;margin-left:-18px;display: block;transform-origin:18px 40px;}
+	.flower-main .petal2{transform: rotate(72deg);}
+	.flower-main .petal3{transform: rotate(144deg);}
+	.flower-main .petal4{transform: rotate(216deg);}
+	.flower-main .petal5{transform: rotate(288deg);}
+	.flower-main .flower-middle{width:30px;height:30px;border-radius: 50%;background: yellow;position:absolute;top:0;left:50%;margin-left:-15px;display: block;}
+	.flower-main .word{color: white;font-size:18px;font-family: "微软雅黑";position:absolute;top:-70px;}
+
+	.butterfly{position:fixed;bottom:138px;z-index: 100;}
+	.fly-main{position:absolute;left:18400px;bottom:500px;transform: rotate(-30deg);}
+	.butterfly .hr{transform: rotate(0deg);left:18370px;width:800px;bottom:124px;}
+	.fly-main .word{transform: rotate(30deg);color: white;font-size:18px;font-family: "微软雅黑";position: absolute;top: 11px;width:40px;}
+	.hr hr{margin-top: 99.4px;}
+	.fly-main .fly2{width:20px;height:8px;background: #AA4F20;display: block;}
+	.fly-main .fly1{width:8px;height:8px;border-radius: 50%;background: #AA4F20;display: block;position: absolute;left:-4px;}
+	.fly-main .fly3{width:8px;height:8px;border-radius: 50%;background: #AA4F20;display: block;position: absolute;top:0;left:16px;}
+	.fly-main .wing1{width:25px;height:25px;border-radius: 50%;background:#ea4b4b;display: block;position: absolute;top:-22px;left:1px;}
+	.fly-main .wing2{width:15px;height:15px;border-radius: 50%;background:#ea4b4b;display: block;position: absolute;top:-11px;left:-10px;}
+	.fly-main .tentcle1{width:13px;height:3px;background: darkslategrey;position: absolute;top: -2px;left:20px;transform: rotate(-30deg);}
+	.fly-main .tentcle2{width:13px;height:3px;background: darkslategrey;position: absolute;top: -4px;left:18px;transform: rotate(-60deg);}
+ 	.butterfly .fly-main2{bottom:400px;}
+ 	.butterfly .fly-main3{bottom:300px;}
+ 	.butterfly .fly-main4{bottom:200px;}
+ 	.butterfly .fly-main5{bottom:100px;}
+
+	.rainbow{position:fixed;bottom:638px;z-index: 50;display: none;}
+	.rainbow .rainbow1{width:940px;height:940px;background: red;border-radius: 50%;position: absolute;left:18500px;display: block;padding:30px;}
+	.rainbow .rainbow2{width:880px;height:880px;background: orange;border-radius: 50%;display: block;padding:30px;}
+	.rainbow .rainbow3{width:820px;height:820px;background: yellow;border-radius: 50%;display: block;padding:30px;}
+	.rainbow .rainbow4{width:760px;height:760px;background: green;border-radius: 50%;display: block;padding:30px;}
+	.rainbow .rainbow5{width:700px;height:700px;background: darkturquoise;border-radius: 50%;display: block;padding:30px;}
+	.rainbow .rainbow6{width:640px;height:640px;background: deepskyblue;border-radius: 50%;display: block;padding:30px;}
+	.rainbow .rainbow7{width:580px;height:580px;background: mediumpurple;border-radius: 50%;display: block;padding:30px;}
+	.rainbow .rainbow8{width:580px;height:580px;background: #00bff3;border-radius: 50%;display: block;transition: background 3s;}
+
+@media screen and (min-height:864px){
+	.butterfly .fly-main1{bottom:250px;}
+	.butterfly .fly-main2{bottom:200px;}
+ 	.butterfly .fly-main3{bottom:150px;}
+ 	.butterfly .fly-main4{bottom:100px;}
+ 	.butterfly .fly-main5{bottom:50px;}
+ 	.hr hr{margin-top: 49.7px;}
+ 	.butterfly .hr{bottom:62px;}
+}
