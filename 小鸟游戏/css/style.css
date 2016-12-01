@@ -1,0 +1,11 @@
+body,img,div,span,i{margin:0;padding:0;}
+html{background: #6DC8CD;}
+html,body{ height: 100%; width: 100%;overflow: hidden;}
+/*.game{width:200%;height:100%;position: relative;}
+.bird{position: fixed;top: 0;left:20%;width:42px;height:31px;}
+.bird img{width:42px;height:31px;}
+.barrier{width:62px;height:100%;position: absolute;top: 0;left: 500px;}
+.barrier span{width: 62px;height: 600px;display: block;position: absolute;}
+.barrier img{width: 62px;height: 600px;}
+.barrier .on{top: -500px;}
+.barrier .down{bottom: -500px;}*/
